@@ -61,8 +61,8 @@ a tuple of degree three is <i>ternary</i>, ...., and more generally a tuple of d
 <p>The value of an attribute should be atomic: it should contain only one useful piece of information and must never require further parsing.</p>
 <h4>Selectors</h4>
 <p>A tuple value is returned or instantiated from a tuple<i> selector</i> invocation:</p> 
-<pre>TUPLE { STATUS INTEGER, SUPPLIER_NAME NAME}            // <span class="verdana">type declaration</span>
-TUPLE { STATUS 20, SUPPLIER_NAME NAME('Smith') }       // <span class="verdana">tuple selector instantiates the tuple
+<pre>TUPLE { STATUS INTEGER, SUPPLIER_NAME NAME}            // type declaration
+TUPLE { STATUS 20, SUPPLIER_NAME NAME('Smith') }       // tuple selector instantiates the tuple
 </pre>
 <p>The attribute type is omitted in the selector because it can always be inferred from the type of the expression denoting the attribute value.</p>
 <h4>A note on notation</h4>
@@ -70,7 +70,7 @@ TUPLE { STATUS 20, SUPPLIER_NAME NAME('Smith') }       // <span class="verdana">
 <h4>Extracting attribute values from tuples</h4>
 <p>In Tutorial D the syntax from extracting an attribute value from a tuple is <i>attribute-name FROM tuple</i>. For example,</p>
 <pre>TUPLE { STATUS 20, SUPPLIER_NAME NAME('Smith') } t; // selector invocation
-STATUS FROM  t;                                     // <span class="verdana">extraction of tuple attribute</span></pre>
+STATUS FROM  t;                                     // extraction of tuple attribute</pre>
 <h4>The empty tuple</h4>
 <p>A tuple with an empty heading has type <span class="mono">TUPLE {}</span> (it has no components). It is called the
 <i>0-tuple</i> to emphasize that it is of degree zero. It is also sometimes called an <i>empty tuple</i>.</p>
